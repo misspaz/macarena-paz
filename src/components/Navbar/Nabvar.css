@@ -1,0 +1,48 @@
+.navbar {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+}
+.navbar--home {
+  background-color: transparent;
+}
+.navbar--home .navbar__nav__list__item {
+  color: white;
+}
+.navbar--other {
+  background-color: #f1f2f4;
+}
+.navbar--other .navbar__nav__list__item {
+  color: #1d1c2c;
+}
+.navbar__logoContainer {
+  height: 80px;
+  margin-left: 40px;
+}
+.navbar__logoContainer__logo {
+  height: 80px;
+}
+.navbar__nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  margin-right: 50px;
+  width: 350px;
+  justify-content: flex-end;
+}
+.navbar__nav__list {
+  display: flex;
+  gap: 50px;
+}
+.navbar__nav__list__item {
+  font-family: "OuterRegular";
+  color: white;
+}/*# sourceMappingURL=Nabvar.css.map */

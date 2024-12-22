@@ -1,0 +1,67 @@
+.projectPage {
+  background-color: #f1f2f4;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.projectPage__info {
+  width: 1300px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.projectPage__info__boxes {
+  display: flex;
+  width: 640px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+.projectPage__info__boxes__title {
+  font-family: "OuterRegular";
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.projectPage__info__boxes__text {
+  font-family: "OuterThin";
+  font-size: 14px;
+}
+.projectPage__info__boxes__techIcons__icon {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.projectPage__info__boxes__techIcons__icon::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1d1c2c;
+  color: #f1f2f4;
+  font-family: "OuterThin";
+  font-size: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+  z-index: 10;
+}
+.projectPage__info__boxes__techIcons__icon:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+.projectPage__info__boxes__techIcons__icon img {
+  width: 30px;
+  margin-right: 8px;
+}/*# sourceMappingURL=Project.css.map */

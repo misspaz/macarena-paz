@@ -1,0 +1,77 @@
+.workContainer {
+  width: 100%;
+  background-color: #f3f4ee;
+  height: 100vh;
+}
+.workContainer__section {
+  font-family: "Gallient";
+  color: #1d1c2c;
+  font-size: 120px;
+  margin-left: 120px;
+  padding-top: 50px;
+  width: 300px;
+}
+.workContainer__section__category {
+  margin-bottom: 60px;
+  margin-left: 120px;
+}
+.workContainer__section__category__title {
+  font-family: "OuterMedium";
+  font-size: 30px;
+  color: #1d1c2c;
+  margin-bottom: 20px;
+}
+.workContainer__section__category__scroll {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  gap: 16px;
+  padding: 16px;
+}
+.workContainer__section__category__scroll::-webkit-scrollbar {
+  height: 6px;
+  border-radius: 4px;
+}
+.workContainer__section__category__scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.workContainer__section__category__scroll::-webkit-scrollbar-thumb {
+  background-color: #1d1c2c;
+  border-radius: 4px;
+}
+.workContainer__section__category__scroll__item {
+  position: relative;
+  min-width: 300px;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.workContainer__section__category__scroll__item .project__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.workContainer__section__category__scroll__item .project__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.workContainer__section__category__scroll__item .project__title {
+  font-family: "OuterLight";
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}/*# sourceMappingURL=WorkSection.css.map */
